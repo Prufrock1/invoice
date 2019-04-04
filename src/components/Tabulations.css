@@ -1,0 +1,9 @@
+.tabulations {
+    border-top: 1px solid gray;
+    text-align: right;
+    padding:10px;
+}
+
+.tabulations .deductionInput {
+    border: 1px solid gray;
+}

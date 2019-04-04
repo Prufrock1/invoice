@@ -1,0 +1,31 @@
+.lineItems {
+    min-height: 200px;
+}
+.lineItems .item {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);;
+}
+.lineItems div {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* mobi */
+@media (max-width: 321px) {
+    .lineItems div {
+        white-space:normal;
+    }
+}
+
+.lineItems .addLineItemBtn,
+.lineItems .doneBtn {
+    float:right;
+    margin:10px;
+}
+
+.lineItems .total {
+    text-align: right;
+    padding-right:4px;
+}

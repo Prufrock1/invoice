@@ -1,33 +1,24 @@
-.App {
-  text-align: center;
+.App .invoiceWrapper {
+  background :white;
+}
+.App header {
+  margin-bottom:40px;
+  text-indent: -9999px;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+/* mobi */
+@media (max-width: 321px) {
+  .App header {
+    background-image: url('/logoMobi.png');
+    width:55px;
+    height:49px;
+  }  
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* desktop */
+@media (min-width: 321px) {
+  .App header {
+    background-image: url('/logoDesktop.png');
+    width:329px;
+    height:57px;
+  }  
 }

@@ -1,0 +1,34 @@
+.address {
+  position: relative;
+  margin:0px auto 4% auto;
+  min-height:40px;
+}
+.address.readOnly {
+  background:white;
+  border-radius:6px;
+}
+.address button {
+  position: absolute;
+  top:-1px;
+  right:0px;
+}
+/* mobi */
+@media (max-width: 321px) {
+  .address {
+    text-align: center;
+  }
+}
+/* desktop */
+@media (min-width: 321px) {
+  .address {
+    width: 300px;
+  }
+  .address.readOnly {
+    box-sizing: border-box;
+    padding:20px;
+    border-radius:6px;
+  }
+  .address input:first-child {
+    width:72%;
+  }
+}
